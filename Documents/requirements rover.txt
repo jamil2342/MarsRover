@@ -1,0 +1,136 @@
+﻿Tasks for Seyd:
+
+1) Organize resources:
+   - Image/Picture for background
+   - Image/Picture for rocks
+   - Image/Picture/Icon for rover/player
+   
+- Image/Picture/Icon for goal
+
+#done
+
+# Requirements:
+
+## Iteration 1 (due: May 10, 2019)
+
+- overall, independent from any requirement: an executable program frame,
+ i.e., something that compiles and provides at least a screen containing something...
+
+- Reqs. for iteration 1:
+
+   - A1: Generate a terrain on which obstacles are placed in a random manner.
+       → IN ITERATION 1: obstacles are manually placed!
+
+   - A2: Place a rover object (player icon) on the terrain (randomly or configurable).
+
+   - A4: The rover can move:
+   - A4.1: The rover can move only forward, i.e., in viewing direction (needed property: current viewing direction or orientation).
+   - A4.2: The rover can rotate only left or right, one step at a time. Rotations happen in angles of 90 degrees.
+   - A4.3: The rover can be handled via keyboard input. 
+#change use grl
+   - ###todo A4.4: The rover can only move one step (tile) at a time: One key press moves the rover to the next tile in viewing direction.
+   - A4.5: The rotation of the rover does not induce a step to another tile (rotation in-place).
+
+   - A5: The rover cannot drive over obstacles:
+   - A5.4: In this iteration No. 1, the rover object shall throw an exception if an obstacle is approached
+
+   - A6: Behavior at terrain bounds:
+   - A6.4: The rover cannot leave the terrain's boundaries. When approaching the boundaries, the rover object shall throw an exception.
+
+   - A8: The language of the game is to be English. This includes the program, the UI, and the code documentation.
+
+
+## Iteration 2 (May 17, 2019)
+
+- Reqs. for iteration 2:
+
+   - A3: Define a goal tile for the rover on the terrain (randomly or configurable).
+
+   - A5.1: The rover can detect whether a step forward would lead to a collision with an obstacle – The step will not be executed.
+   - A5.2: The rover needs to drive round obstacles – rotations and moving steps are needed.
+   - A5.3: During the detection of obstacles, the rover needs to be set into a safe state.
+       → note: this set of A5.x requirements overrides requirement A5.4 (iteration 1)
+
+   - A6.1: Two behaviors need to be implemented (randomly and linear).
+   - A6.2: When "hitting" a terrain bound, the rover is set randomly to one of the other terrain bounds.
+       – The viewing direction must not be pointing to the bound that the rover is placed at now.
+   - A6.3: When "hitting" a terrain bound, the rover is set directly to the opposite bound.
+       – The viewing direction is not changed by its step.
+       → note: this set of A6.x requirements overrides requirement A6.4 (iteration 1)
+
+
+## Iteration 3 (May 22, 2019)
+
+- Reqs. for iteration 3:
+
+   - A1.1: The generation of obstacles can also be generated programmatically (configuration of obstacles)
+
+   - A7: Remote control:
+   - A7.1: The rover can be "controlled remotely", i.e., it can receive and handle command sequences.
+   - A7.2: The commands are: "g" for one step forward, "r" for one rotation to the right, "l" for one rotation to the left
+   - A7.3: The command sequence can be issued directly from inside the game.
+   - A7.4: The command sequence can be placed in a text file and then loaded and executed from inside the game.
+# button load sequence from file. do it from text file.
+   - A7.5: The execution of a command sequence happens with a time offset of 3 seconds.
+   - A7.6: A command sequence is to be executed completely – if no error occurs.
+   
+   the field configuration should done
+
+
+obstacle generation random flag based
+A.6.1
+//rotate the rover the angle (most important)
+//increase the number of obstacles: 15
+remove the exception handler and object
+
+   
+
+when the rover is on rock the sequence should be stopped. Message should be invalid path.
+change the wintext to mission accomplished
+change the goal tile small green figure
+
+end of this week
+---------------------------------------------------------------------------------------------
+
+
+refactoring. Well structured.
+configuration file. use program configuration file. try for builtin. Program name.config. 
+how to createa external configuration file. oninitialize. 
+
+//code documentation
+
+
+
+meet friday 9.00 am
+//////////////////////////////////////////////////d/////////////////////
+
+
+
+create a setting file. where read and write file is done. instances are removed.
+press l before s. crash issue.
+without timer initializing timer start will cause crash.
+
+while writing something in the input field the event is taking there.
+2 file. one for setting 
+another for command seq
+//L is taken for left. So, change that. Take x
+//remove white background from goal tile. make transparent.
+Canvas on the scene.
+//write which function are unity.
+//Resolved the issue of while typing still changing although timer is stop.
+//write comments inside function.
+//don't shift the hour
+readme
+	require tool, unity version,.net version	
+	Code documentation
+	refactoring
+
+have changed the file based aspects.
+
+
+
+refactor
+document the code
+//style cop
+
+work hour

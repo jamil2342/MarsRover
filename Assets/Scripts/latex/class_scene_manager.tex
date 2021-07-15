@@ -1,0 +1,160 @@
+\hypertarget{class_scene_manager}{}\doxysection{Scene\+Manager Class Reference}
+\label{class_scene_manager}\index{SceneManager@{SceneManager}}
+
+
+Scene Manager class is the most important class and responsible for all the tasks.  
+
+
+Inheritance diagram for Scene\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scene_manager_a9c493dae869458ae64d4dd9efb2cfff7}{New\+Scale}} (Game\+Object the\+Game\+Object, float new\+Size)
+\begin{DoxyCompactList}\small\item\em We can resize the total scene using this function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a86cc86842e457ed6c9d3268df97e1f9e}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Unity Function. Start is called before the first frame update \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a1700705e183249b1b8c6d95b8d044f69}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Unity Function. Update is called once per frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_manager_a481fe1855096fee08d83c7ea117276e9}\label{class_scene_manager_a481fe1855096fee08d83c7ea117276e9}} 
+bool {\bfseries Is\+Position\+Free} (\mbox{\hyperlink{class_position}{Position}} pos)
+\item 
+\mbox{\Hypertarget{class_scene_manager_a25c776b7ed998aa39bbb006de0232161}\label{class_scene_manager_a25c776b7ed998aa39bbb006de0232161}} 
+bool {\bfseries Is\+Position\+Valid} (\mbox{\hyperlink{class_position}{Position}} pos)
+\item 
+\mbox{\Hypertarget{class_scene_manager_aa51b84f276332029bf25c38d87506d30}\label{class_scene_manager_aa51b84f276332029bf25c38d87506d30}} 
+bool {\bfseries Is\+Goal\+Reached} (\mbox{\hyperlink{class_position}{Position}} pos)
+\item 
+\mbox{\Hypertarget{class_scene_manager_ac0ca396d0c42984177064e6150e5bee4}\label{class_scene_manager_ac0ca396d0c42984177064e6150e5bee4}} 
+Vector3 {\bfseries Get\+Vector\+From\+Position} (\mbox{\hyperlink{class_position}{Position}} pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_scene_manager_a2bc0e3f4c71c77dc2042d0bd5bf5ffad}{Exit\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Call this static function when iterested to extit the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_scene_manager_af6991ac500fe283edcebb175b82e3021}{is\+Goal\+Tile\+Random}} = true
+\begin{DoxyCompactList}\small\item\em Timer for automatic mode \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_manager_a2e3a841a8d571c8b498af48ff2cffc9f}\label{class_scene_manager_a2e3a841a8d571c8b498af48ff2cffc9f}} 
+bool {\bfseries is\+On\+Hit\+Boundary\+Place\+Random} = true
+\item 
+\mbox{\Hypertarget{class_scene_manager_a0543b5d98475eb16831526225f6856fa}\label{class_scene_manager_a0543b5d98475eb16831526225f6856fa}} 
+bool {\bfseries is\+Obstacle\+Random} = true
+\item 
+\mbox{\Hypertarget{class_scene_manager_a57abd7e1e4c299930482eaf30e33e926}\label{class_scene_manager_a57abd7e1e4c299930482eaf30e33e926}} 
+int {\bfseries Number\+Of\+Tile} = 15
+\item 
+\mbox{\Hypertarget{class_scene_manager_a8e4ee7d663389f37fb8f07d577f6f6cb}\label{class_scene_manager_a8e4ee7d663389f37fb8f07d577f6f6cb}} 
+string {\bfseries command\+Seq} = string.\+Empty
+\item 
+\mbox{\Hypertarget{class_scene_manager_a4652a6ec76a448fe8b9b60b8ca862a2c}\label{class_scene_manager_a4652a6ec76a448fe8b9b60b8ca862a2c}} 
+double {\bfseries timer\+Interval} = 2000
+\item 
+\mbox{\Hypertarget{class_scene_manager_aa32942ac1042d1e151139612e11de421}\label{class_scene_manager_aa32942ac1042d1e151139612e11de421}} 
+Input\+Field {\bfseries input\+Field}
+\item 
+\mbox{\Hypertarget{class_scene_manager_a2b3f2bd0f1ae88f77ac58b06c18f31c7}\label{class_scene_manager_a2b3f2bd0f1ae88f77ac58b06c18f31c7}} 
+Button {\bfseries start\+Remote\+Btn}
+\item 
+\mbox{\Hypertarget{class_scene_manager_a8bbf92a3798ce767a3c02844f352f4ed}\label{class_scene_manager_a8bbf92a3798ce767a3c02844f352f4ed}} 
+Text {\bfseries invalid\+Path\+Txt}
+\item 
+\mbox{\Hypertarget{class_scene_manager_ab1903820f9579fa8f2e944e84d30e14c}\label{class_scene_manager_ab1903820f9579fa8f2e944e84d30e14c}} 
+\mbox{\hyperlink{class_rover_controller}{Rover\+Controller}} {\bfseries rover\+Controller}
+\item 
+\mbox{\Hypertarget{class_scene_manager_af82b87d7ecb03336100fa40322e9291a}\label{class_scene_manager_af82b87d7ecb03336100fa40322e9291a}} 
+Game\+Object {\bfseries player}
+\item 
+\mbox{\Hypertarget{class_scene_manager_a0af61514092517930be2f6daad691aa8}\label{class_scene_manager_a0af61514092517930be2f6daad691aa8}} 
+Game\+Object {\bfseries goal}
+\item 
+\mbox{\Hypertarget{class_scene_manager_a52aa3990d559c37044450c341292450c}\label{class_scene_manager_a52aa3990d559c37044450c341292450c}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries obstacles}
+\item 
+\mbox{\Hypertarget{class_scene_manager_a8934c21c90fcde9f42f72977ad93bd03}\label{class_scene_manager_a8934c21c90fcde9f42f72977ad93bd03}} 
+Text {\bfseries Auto\+Manual\+Txt}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Scene Manager class is the most important class and responsible for all the tasks. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_manager_a2bc0e3f4c71c77dc2042d0bd5bf5ffad}\label{class_scene_manager_a2bc0e3f4c71c77dc2042d0bd5bf5ffad}} 
+\index{SceneManager@{SceneManager}!ExitGame@{ExitGame}}
+\index{ExitGame@{ExitGame}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{ExitGame()}{ExitGame()}}
+{\footnotesize\ttfamily static void Scene\+Manager.\+Exit\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Call this static function when iterested to extit the game. 
+
+\mbox{\Hypertarget{class_scene_manager_a9c493dae869458ae64d4dd9efb2cfff7}\label{class_scene_manager_a9c493dae869458ae64d4dd9efb2cfff7}} 
+\index{SceneManager@{SceneManager}!NewScale@{NewScale}}
+\index{NewScale@{NewScale}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{NewScale()}{NewScale()}}
+{\footnotesize\ttfamily void Scene\+Manager.\+New\+Scale (\begin{DoxyParamCaption}\item[{Game\+Object}]{the\+Game\+Object,  }\item[{float}]{new\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+We can resize the total scene using this function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Game\+Object} & Typically the background\\
+\hline
+{\em new\+Size} & New size of the gameobject\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_manager_a86cc86842e457ed6c9d3268df97e1f9e}\label{class_scene_manager_a86cc86842e457ed6c9d3268df97e1f9e}} 
+\index{SceneManager@{SceneManager}!Start@{Start}}
+\index{Start@{Start}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Scene\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unity Function. Start is called before the first frame update 
+
+Placing the obstacles\mbox{\Hypertarget{class_scene_manager_a1700705e183249b1b8c6d95b8d044f69}\label{class_scene_manager_a1700705e183249b1b8c6d95b8d044f69}} 
+\index{SceneManager@{SceneManager}!Update@{Update}}
+\index{Update@{Update}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unity Function. Update is called once per frame 
+
+Executing the command sequence from timer event handler.
+
+when the timer is on and the rover hit on obstacles it will show invalid path message
+
+Setting Auto or Manual Text based on the command sequences.
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scene_manager_af6991ac500fe283edcebb175b82e3021}\label{class_scene_manager_af6991ac500fe283edcebb175b82e3021}} 
+\index{SceneManager@{SceneManager}!isGoalTileRandom@{isGoalTileRandom}}
+\index{isGoalTileRandom@{isGoalTileRandom}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{isGoalTileRandom}{isGoalTileRandom}}
+{\footnotesize\ttfamily bool Scene\+Manager.\+is\+Goal\+Tile\+Random = true}
+
+
+
+Timer for automatic mode 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scene\+Manager.\+cs\end{DoxyCompactItemize}
